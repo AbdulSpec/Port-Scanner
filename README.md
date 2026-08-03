@@ -2,11 +2,11 @@ Port Scanner
 
 Project 2: This project showcases a little about my skills, projects, goals, and journey as a CyberSec student.
 
-About the Project/What is does
+About the Project/What is does:
 
-Project 2 is a Port Scanner, once supplied with a range, it will scan those ports and return a list of which are opened/closed
+Project 2 is a Port Scanner, once supplied with a range, it will scan those ports and return a list of which are opened/closed, keeping a log of them on a separate file.
 
-Technologies Used
+Technologies Used:
 
 Python3
 Libraries
