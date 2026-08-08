@@ -16,6 +16,12 @@ def scan_range(host, start_port, end_port):
     return open_ports
 
 def port_scanner_report(host, start_port, end_port):
+    if start_port > end_port:
+        print (f"Error: start_port cannot be greater than end_port")
+        return
+    if start_port < 1 or end_port > 65535:
+        print (f"Error: port range 1-65535")
+        return
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     results = scan_range(host, start_port, end_port)
     print(f"Port Scanner Report")
@@ -34,4 +40,4 @@ def port_scanner_report(host, start_port, end_port):
             log.write("---------------\n")
     return results
     
-port_scanner_report("google.com", 79, 85)
+port_scanner_report("google.com", 0, 85)
